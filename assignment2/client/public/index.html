@@ -1,0 +1,70 @@
+<!-- Swaathi -->
+<!-- P2227171 -->
+<!-- DISM/FT/2B/21 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SP Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 sp-game-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:8082/">Home</a>
+            </li>
+            <li class="nav-item shopping-cart-nav">
+              <a class="nav-link" href="http://localhost:8082/shoppingcart">Shopping Cart</a>
+            </li>
+            <li class="nav-item login-login"></li>
+            <li class="nav-item login-signup"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+           <!-- nav bar end -->
+
+           <!-- home page -->
+          
+           <div class="mt-3 mb-4 row container-fluid justify-content-center">
+              <div class="form-group col-5">
+                <input type="search" class="form-control index-search-bar" id="search-input" placeholder="Search for games by title">
+              </div>
+                <div class="dropdown col-2">
+                    <button class="btn btn-light dropdown-toggle index-platform-but" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Choose a platform
+                    </button>
+                    <ul class="dropdown-menu index-pltform-li"></ul>
+                </div>
+                <div class="col-1">
+                  <button type="submit" class="btn ms-3 index-search rounded-pill bg-light">
+                    <img style="width: 33px;" src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png" class="text-white">
+                  </button>                  
+                </div>
+          </div>
+
+          <div class="row justify-content-center display-game"></div>
+          
+
+           <!-- home page end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="./jsfiles/login.js"></script>
+    <script src = "jsfiles/search.js"></script>
+</body>
+</html>

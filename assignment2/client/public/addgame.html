@@ -1,0 +1,104 @@
+<!-- Swaathi -->
+<!-- P2227171 -->
+<!-- DISM/FT/2B/21 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SP Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 sp-game-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:8082/">Home</a>
+            </li>
+            <li class="nav-item shopping-cart-nav">
+              <a class="nav-link" href="http://localhost:8082/shoppingcart">Shopping Cart</a>
+            </li>
+            <li class="nav-item login-login"></li>
+            <li class="nav-item login-signup"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+           <!-- nav bar end -->
+           <!-- add game -->
+           <div class="row d-flex justify-content-center add-game-form">
+            <div class="col-6 mt-3">
+                <h2>Add Game</h2>
+                <div class="mb-3">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" name="title" placeholder="Title">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" name="description" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Year</label>
+                    <input type="text" class="form-control" name="year" placeholder="2023">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Image</label>
+                    <input class="form-control" type="file" name="aimage" id="formFile">
+                  </div>
+                  
+                  <div class="game-cats">
+                    <label class="form-label"> Choose Categories:</label>
+                    <div class="mb-2 category-container">
+                      <div class="btn-group mb-2">
+                          <button data-cat-id="none" name="category" class="btn btn-secondary dropdown-toggle cat-but" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">Category</button>
+                          <ul class="dropdown-menu cat-li">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <button type="submit" class="add-cat btn p-0"><img style="width: 30px;" src="https://cdn-icons-png.flaticon.com/512/992/992651.png"></button>
+                    </div>
+                  </div>
+                  
+                  <div class="game-plats">
+                    <label class="form-label"> Choose Platforms:</label>
+                    <div class="mb-2 platform-container row">
+                      <div class="btn-group col-auto">
+                          <button data-plat-id="none" name="platform"class="btn btn-secondary dropdown-toggle plat-but" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Platform
+                          </button>
+                          <ul class="dropdown-menu plat-li">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <button type="submit" class="add-plat btn p-0 col-auto"><img style="width: 30px;" src="https://cdn-icons-png.flaticon.com/512/992/992651.png"></button>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary mb-3 create-but">Create</button>
+                </div>
+            </div>
+            
+              
+           </div>
+           
+           <!-- add game end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="./jsfiles/login.js"></script>
+    <script src="./jsfiles/addgame.js"></script>
+</body>
+</html>
