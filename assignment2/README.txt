@@ -9,9 +9,11 @@ DISM/FT/2B/21
 3. After opening the project in visual studio code, open two new terminals (terminal A and terminal B). 
 4. In terminal A, run the following commands:
     cd client
+    npm -i
     nodemon index.js
 5. In terminal B, run the following commands:
     cd backend
+    npm -i
     nodemon server.js
 6. Change the sql user and password to your desired user information in databaseConfig.js.
 7. Now you can open a web browser and enter ‘http://localhost:8082’ in the search bar.
